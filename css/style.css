@@ -254,7 +254,7 @@ body {
     gap: 10px;
   }
   
-  .profile {
+  .profile, .profile1 {
     display: flex;
     align-items: center;
     background-color: #333;
@@ -262,7 +262,7 @@ body {
     border-radius: 10px;
     border: 2px solid #EBBA0F;
   }
-  
+
   .profile-img {
     width: 60px;
     height: 60px;
@@ -291,3 +291,234 @@ body {
     color: #EBBA0F;
   }
   
+
+  /* Profile page */
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  font-size: 1.5em;
+  color: #EBBA0F;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+/* Profile Section with Grid Layout */
+.profile-section {
+    display: grid;
+    grid-template-columns: 150px 1fr; /* Image in the first column, text in the second */
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #EBBA0F;
+    grid-row: span 3; /* Makes the image span multiple rows */
+}
+
+.profile-details {
+    display: grid;
+    gap: 5px;
+    text-align: center;
+    margin-left: 8px;
+}
+
+.profile-name {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.profile-info {
+    font-size: 1em;
+}
+
+.needs-list {
+    list-style-type: none;
+    color: #EBBA0F;
+    font-size: 1em;
+    padding: 0;
+    margin-top: 5px;
+    margin-left: 24px;
+}
+
+
+/* About Section */
+.about-section {
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.money-button, .gear-button,
+.volunteer-button {
+  background-color: #EBBA0F;
+  color: bold #000;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  width: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.button-group p {
+  font-size: 0.9em;
+  color: #fff;
+}
+
+
+/* Financial Page Layout */
+.financial-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.financial-goal {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.items-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  color: #EBBA0F;
+}
+
+.amount {
+  font-size: 1.1em;
+  color: #fff;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 5px;
+}
+
+.button-container .pay-full,
+.button-container .enter {
+  font-size: 0.9em;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.pay-full {
+  background-color: #EBBA0F;
+  color: #000;
+}
+
+.enter {
+  background-color: #fff;
+  color: #000;
+}
+
+.total-section {
+  width: 100%;
+  text-align: right;
+  font-size: 1.3em;
+  margin-top: 10px;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+}
+
+.next-button {
+  background-color: #EBBA0F;
+  color: #000;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.enter-amount {
+  width: 80px;
+  padding: 5px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+  .items-list {
+    margin-bottom: 80px;
+}  
+
+.item {
+  margin: 8px;
+}
+
+.financial-goal {
+  margin-top: 80px;
+}
