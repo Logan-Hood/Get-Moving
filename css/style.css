@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .container {
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+  }
+ 
+  .logo img {
+    width: 450px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  .input-field {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: 5px solid #EBBA0F;
+    background-color: #fff;
+    color: #000;
+    font-size: 1em;
+  }
+  .login-button {
+    background-color: #EBBA0F;
+    color: bold #000;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  .text {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  .register {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #ccc;
+  }
+  .register-button {
+    background-color: #EBBA0F;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 50%;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+
+
+/* Page 2 */
+
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Container styling */
+  .container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Header styling */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .back-button {
+    font-size: 1.5em;
+    color: #EBBA0F;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  
+  /* Heading styling */
+  h2 {
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+  
+  h3 {
+    font-size: 1em;
+    margin: 20px 0 10px;
+    color: #ffffff;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .form-group input, .form-group select {
+    flex: 1;
+    min-width: 30%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 5px solid #EBBA0F;
+    background-color: #fff;
+    color: #000;
+    font-size: 1em;
+  }
+  
+  .form-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="black" d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    padding-right: 30px;
+  }
+  
+  /* Checkbox group styling */
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-group label {
+    font-size: 0.9em;
+    color: #EBBA0F;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Submit button styling */
+  .submit-button {
+    background-color: #EBBA0F;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 50%;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+
+
+  /* Pge 3 */
+
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Container styling */
+  .container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Header styling */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    font-size: 1.5em;
+    color: #EBBA0F;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .status-icons {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+  }
+  
+  .status-time, .status-network, .status-battery {
+    margin-left: 5px;
+  }
+  
+  /* Profile list styling */
+  .profile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #EBBA0F;
+  }
+  
+  .profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #EBBA0F;
+    margin-right: 15px;
+  }
+  
+  .profile-info {
+    text-align: left;
+  }
+  
+  .profile-info h3 {
+    font-size: 1.1em;
+    color: #fff;
+  }
+  
+  .profile-info p {
+    font-size: 0.9em;
+    color: #ccc;
+    margin: 2px 0;
+  }
+  
+  .needs {
+    font-size: 0.9em;
+    color: #EBBA0F;
+  }
+  

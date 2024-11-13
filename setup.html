@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Moving - Registration</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <button class="back-button">◀</button>
+      <div class="logo">
+        <img src="images/Logo.png" alt="Logo">
+      </div>
+    </div>
+
+    <h2>Tell us about yourself</h2>
+
+    <form>
+      <div class="form-group">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="MI">
+        <input type="text" placeholder="Last Name" required>
+      </div>
+
+      <div class="form-group">
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number" required>
+      </div>
+
+      <div class="form-group">
+        <input type="text" placeholder="Street Address" required>
+        <input type="text" placeholder="Apt #">
+        <input type="text" placeholder="Neighborhood">
+      </div>
+
+      <div class="form-group">
+        <select required>
+          <option value="" disabled selected>Borough:</option>
+          <option value="Manhattan">Manhattan</option>
+          <option value="Brooklyn">Brooklyn</option>
+          <option value="Queens">Queens</option>
+          <option value="Bronx">Bronx</option>
+          <option value="Staten Island">Staten Island</option>
+        </select>
+      </div>
+
+      <h3>Who are you?</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Relative</label>
+        <label><input type="checkbox"> Coach</label>
+        <label><input type="checkbox"> Teacher</label>
+        <label><input type="checkbox"> Friend</label>
+        <label><input type="checkbox"> Other</label>
+      </div>
+
+      <h3>Type of contributions</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Donate Money</label>
+        <label><input type="checkbox"> Donate Gear</label>
+        <label><input type="checkbox"> Volunteer</label>
+      </div>
+
+      <h3>Who do you want to help?</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Individual</label>
+        <label><input type="checkbox"> Team</label>
+        <label><input type="checkbox"> League</label>
+      </div>
+
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
