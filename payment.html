@@ -1,33 +1,103 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Moving - Payment</title>
+    <title>Get Moving - Payment Information</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="container">
+        <!-- Header with back button and logo -->
         <div class="header">
             <button class="back-button" onclick="goBackToMoney()">◀</button>
-            <h1>
-                <div class="logo">
-                    <img src="images/Logo.png" alt="Logo">
-                </div>
-            </h1>
-            <div class="status-icons">
+            <h1><div class="logo">
+                <img src="images/Logo.png" alt="Logo">
+            </div></h1>      <div class="status-icons">
                 <span class="status-time"></span>
                 <span class="status-network"></span>
                 <span class="status-battery"></span>
               </div>
         </div>
+    </div>
+
+        <!-- Payment Form -->
+        <div class="payment-page">
+            <h1 class="page-title">Payment Information</h1>
+          
+            <div class="form-container">
+              <h2>Personal Details</h2>
+          
+              <!-- First and Last Name on the same row -->
+              <div class="form-item first-name">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="First Name">
+              </div>
+              <div class="form-item last-name">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Last Name">
+              </div>
+
+              <div class="form-item email">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email">
+              </div>
+
+              <div class="form-item email-receipt">
+                <label>
+                    <input type="checkbox" id="email-receipt" name="email-receipt">
+                    Send me an email receipt
+                </label>
+            </div>
 
 
-
-        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-        <script src="js/index.js"></script>
-<body
+              <h2>Payment Details</h2>
 
 
+              <!-- Credit Card Number (full width) -->
+              <div class="form-item card-number">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="Card Number">
+              </div>
+          
+              <!-- Expiration Date and CVV on the same row -->
+              <div class="form-item expiration-date">
+                <label for="expiration-date">Expiration Date</label>
+                <input type="text" id="expiration-date" placeholder="MM/YY">
+              </div>
+              <div class="form-item cvv">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="CVV">
+              </div>
+          
+              <h2>Billing Details</h2>
+
+              <!-- Apt #, State, and Zip Code on the same row -->
+              <div class="form-item street-number">
+                <label for="street-number">Address</label>
+                <input type="text" id="street-number" placeholder="1234 East Jefferson St">
+              </div>
+              <div class="form-item apt-number">
+                <label for="apt-number">Apt #</label>
+                <input type="text" id="apt-number" placeholder="Apt #">
+              </div>
+              <div class="form-item state">
+                <label for="state">State</label>
+                <input type="text" id="state" placeholder="State">
+              </div>
+              <div class="form-item zip-code">
+                <label for="zip-code">Zip Code</label>
+                <input type="text" id="zip-code" placeholder="Zip Code">
+              </div>
+          
+              
+        <!-- submit button -->
+        <button class="submit-button" onclick="goToThankyou()">Submit</button>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="js/index.js"></script>
+
+</html>
 

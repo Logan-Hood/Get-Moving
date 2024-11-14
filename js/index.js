@@ -47,3 +47,11 @@ function goToPayment() {
 function goBackToMoney() {
   window.location.href = 'money.html';
 }
+
+function goToThankyou() {
+  window.location.href ='thankyou.html';
+}
+
+function goBackToPayment() {
+  window.location.href = 'payment.html';
+}
