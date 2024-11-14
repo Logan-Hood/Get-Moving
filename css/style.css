@@ -1,138 +1,105 @@
+/* Header styling */
+.header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px;
+}
+
+/* Body styling */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  .container {
-    align-items: center;
-    width: 80%;
-    max-width: 400px;
-  }
- 
-  .logo img {
-    width: 350px;
-    height: 100px;
-    margin-right: 10px;
-  }
-  .input-field {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 25px;
-    border: 5px solid #EBBA0F;
-    background-color: #fff;
-    color: #000;
-    font-size: 1em;
-  }
-  .login-button {
-    background-color: #EBBA0F;
-    color: bold #000;
-    border: none;
-    border-radius: 5px;
-    padding: 15px;
-    width: 50%;
-    font-size: 1.5em;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    font-weight: bold;
-  }
-  .text {
-    margin: 20px 0;
-    font-size: 18px;
-  }
-  .register {
-    margin-top: 20px;
-    font-size: 1em;
-    color: #ccc;
-  }
-  .register-button {
-    background-color: #EBBA0F;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    padding: 15px;
-    width: 50%;
-    font-size: 1.5em;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 5px;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
   }
 
 
-
-/* Page 2 */
-
-
-/* General reset */
+  /* General reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body styling */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 20px;
-  }
-  
-  /* Container styling */
-  .container {
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  /* Header styling */
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .back-button {
-    font-size: 1.5em;
-    color: #EBBA0F;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-  
-  /* Heading styling */
-  h2 {
-    font-size: 1.2em;
-    margin: 20px 0;
-  }
-  
-  h3 {
-    font-size: 1em;
-    margin: 20px 0 10px;
-    color: #ffffff;
-  }
-  
-  /* Form styling */
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .form-group {
+
+
+/* Container */
+.container {
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ 
+/* Logo */
+.logo img {
+  width: 300px;
+  height: 80px;
+}
+
+/* Buttons */
+.payment-button, .next-button, .button-base, .login-button, .submit-button, .register-button, .money-button, .gear-button, .volunteer-button, .restart-button {
+  background-color: #EBBA0F;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  width: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-button {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.submit-button, .next-button {
+  margin-top: 32px;
+}
+
+.restart-button {
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+
+.back-button {
+  background-color: #000000;
+  color: #EBBA0F;
+  border: none;
+  font-size: 1.5em;
+  grid-column: 2;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+.gear-button, .volunteer-button {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+
+/* Form styling */
+.input-field, .enter-amount {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 5px solid #EBBA0F;
+  background-color: #fff;
+  color: #000;
+  font-size: 1em;
+  margin: 12px;
+}
+ 
+.form-group {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -140,7 +107,7 @@ body {
     margin-bottom: 15px;
   }
   
-  .form-group input, .form-group select {
+.form-group input, .form-group select {
     flex: 1;
     min-width: 30%;
     padding: 10px;
@@ -158,202 +125,152 @@ body {
     background: #fff url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="black" d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
     padding-right: 30px;
   }
-  
-  /* Checkbox group styling */
-  .checkbox-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .checkbox-group label {
-    font-size: 0.9em;
-    color: #EBBA0F;
-  }
-  
-  .checkbox-group input[type="checkbox"] {
-    margin-right: 5px;
-  }
-  
-  /* Submit button styling */
-  .submit-button {
-    background-color: #EBBA0F;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    padding: 15px;
-    width: 50%;
+
+
+
+  /* Text styles */
+
+h1 {
     font-size: 1.5em;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 5px;
-  }
-  
-
-
-  /* Pge 3 */
-
-
-/* General reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body styling */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  /* Container styling */
-  .container {
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  /* Header styling */
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .back-button {
-    font-size: 1.5em;
-    color: #EBBA0F;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .status-icons {
-    display: flex;
-    align-items: center;
-    font-size: 0.8em;
-  }
-  
-  .status-time, .status-network, .status-battery {
-    margin-left: 5px;
-  }
-  
-  /* Profile list styling */
-  .profile-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .profile, .profile1 {
-    display: flex;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .profile2 {
-    display: flex;
-    align-items: center;
-    background-color: #000000;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-.profile, .profile2 {
-  filter: blur(1px);
-}
-
-  .profile-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 2px solid #EBBA0F;
-    margin-right: 15px;
-  }
-  
-  .profile-info {
-    text-align: left;
-  }
-  
-  .profile-info h3 {
-    font-size: 1.1em;
     color: #fff;
   }
-  
-  .profile-info p {
-    font-size: 0.9em;
-    color: #ccc;
-    margin: 2px 0;
-  }
-  
-  .needs {
-    font-size: 0.9em;
-    color: #EBBA0F;
-  }
-  
 
-  /* Profile page */
- *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+h2, h3, h4 {
+    color: #ffffff;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #000;
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 64px;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.text, .about-section, .register, .profile-info, .needs-list {
+    font-size: 1em;
+    margin: 20px 0;
+}
+  
+/* Section headings */
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: #ffffff;
+  grid-column: 1 / 3;
+}
+
+
+/* Profile Section on Listing Page */
+.profile-section {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 10px;
+  align-items: center;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
 }
 
-.container {
-  text-align: center;
-  width: 100%;
-  max-width: 500px;
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #EBBA0F;
+  margin-right: 15px;
 }
 
-/* Header styling */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.back-button {
-  font-size: 1.5em;
-  color: #EBBA0F;
-  background: none;
-  border: none;
+.profile1 {
   cursor: pointer;
 }
 
-h1 {
-  font-size: 1.5em;
-  color: #fff;
+.profile, .profile1, .profile2 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-/* Profile Section with Grid Layout */
+.profile, .profile1 {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.profile, .profile2 {
+  filter: blur(1px);
+  cursor: not-allowed;
+  }
+
+.profile-info {
+  text-align: left;
+}
+
+.needs {
+  font-size: 0.9em;
+  color: #EBBA0F;
+}
+
+.profile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+
+/* Checkbox styling */
+.checkbox-group label {
+  font-size: 1em;
+  color: #EBBA0F;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 10px;
+  margin: 15px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+
+
+
+/* Misc. Styling */
+.items-list {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Profile Page with Grid Layout */
 .profile-section {
     display: grid;
     grid-template-columns: 150px 1fr; /* Image in the first column, text in the second */
-    gap: 10px;
     align-items: center;
-    margin-bottom: 20px;
     color: #fff;
 }
 
@@ -362,14 +279,6 @@ h1 {
     height: 150px;
     border-radius: 50%;
     border: 3px solid #EBBA0F;
-    grid-row: span 3; /* Makes the image span multiple rows */
-}
-
-.profile-details {
-    display: grid;
-    gap: 5px;
-    text-align: center;
-    margin-left: 8px;
 }
 
 .profile-name {
@@ -377,9 +286,6 @@ h1 {
     font-weight: bold;
 }
 
-.profile-info {
-    font-size: 1em;
-}
 
 .needs-list {
     list-style-type: none;
@@ -393,14 +299,10 @@ h1 {
 
 /* About Section */
 .about-section {
-  margin: 20px 0;
+  font-size: 18px;
+  margin: 12px;
 }
 
-h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  color: #fff;
-}
 
 /* Button Group */
 .button-group {
@@ -408,155 +310,20 @@ h3 {
   flex-direction: column;
   align-items: center;
   gap: 15px;
-}
-
-.money-button {
-  background-color: #EBBA0F;
-  color: bold #000;
-  border: none;
-  border-radius: 5px;
-  padding: 15px;
-  width: 50%;
-  font-size: 1.5em;
-  cursor: pointer;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.gear-button,
-.volunteer-button {
-  background-color: #EBBA0F transparent;
-  color: bold #000000 ;
-  border: none;
-  border-radius: 5px;
-  padding: 15px;
-  width: 50%;
-  font-size: 1.5em;
-  cursor: pointer;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-
-.button-group p {
-  font-size: 0.9em;
-  color: #fff;
-}
-
-
-/* Financial Page Layout */
-.financial-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fff;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-
-.financial-goal {
-  font-size: 1.4em;
-  font-weight: bold;
-  margin: 15px 0;
-}
-
-.items-list {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 10px;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.item {
-  display: flex;
-  align-items: center;
-  font-size: 1.2em;
-  color: #EBBA0F;
-}
-
-.amount {
-  font-size: 1.1em;
-  color: #fff;
-  text-align: center;
-}
-
-.button-container {
-  display: flex;
-  gap: 5px;
-}
-
-.button-container .pay-full,
-.button-container .enter {
-  font-size: 0.9em;
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-.pay-full {
-  background-color: #EBBA0F;
-  color: #000;
-}
-
-.enter {
-  background-color: #fff;
-  color: #000;
-}
-
-.total-section {
-  width: 100%;
-  text-align: right;
-  font-size: 1.3em;
-  margin-top: 10px;
-  border-top: 1px solid #fff;
-  padding-top: 10px;
-}
-
-.next-button {
-  background-color: #EBBA0F;
-  color: #000;
-  padding: 15px 30px;
-  font-size: 1.2em;
-  font-weight: bold;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
   margin-top: 20px;
 }
 
-.enter-amount {
-  width: 80px;
-  padding: 5px;
-  margin-left: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  text-align: center;
+.button-group p {
+  font-size: 1em;
+  color: #fff;
 }
 
-  .items-list {
-    margin-bottom: 80px;
-}  
 
-.item {
-  margin: 8px;
-}
-
-.financial-goal {
-  margin-top: 80px;
-}
 
 
 
 
 /* Payment Page */
-
-.payment-page {
-  text-align: center;
-  padding: 20px;
-}
 
 .page-title {
   font-size: 1.8rem;
@@ -568,38 +335,28 @@ h3 {
 .form-container {
   width: 90%;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 24px auto;
   font-family: Arial, sans-serif;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px; /* Spacing between each item */
+  background-color: #333;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  border-radius: 5px;
 }
 
-/* Section headings */
-h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 20px 0 10px;
-  color: #ffffff;
-  grid-column: 1 / 3;
-}
-
+label {
+  display: flex;
+  align-items: start;
+  }
 
 /* Form grid layout */
-.form-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-item label {
-  font-size: 1rem;
-  color: #ffffff;
-}
-
 .form-item input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 5px solid #EBBA0F;
   border-radius: 5px;
   font-size: 14px;
   margin-top: 5px;
@@ -623,7 +380,7 @@ h2 {
 }
 
 .email-receipt {
-  grid-column: 1 / 4 ;
+  grid-column: 1 / 2;
 }
 
 .card-number {
@@ -654,51 +411,3 @@ h2 {
   grid-column: 3 / 5; /* Third column */
 }
 
-
-
-
-/* Submit Button Styling */
-.submit-button {
-  background-color: #EBBA0F;
-  color: #000;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 15px;
-  border: none;
-  border-radius: 8px;
-  width: 100%;
-  cursor: pointer;
-  margin-top: 20px;
-  grid-column: 2 / 4; /* Make button full-width */
-}
-
-.submit-button:hover {
-  background-color: #dba50c;
-}
-
-
-label {
-display: flex;
-align-items: start;
-}
-
-
-h4 {
-  font-size: 64px;
-  margin-top: 80px;
-  margin-bottom: 120px;
-}
-
-.restart-button {
-  background-color: #EBBA0F;
-  color: bold #000;
-  border: none;
-  border-radius: 5px;
-  padding: 15px;
-  width: 50%;
-  font-size: 1.5em;
-  cursor: pointer;
-  margin-top: 120px;
-  margin-bottom: 40px;
-  font-weight: bold;
-}
