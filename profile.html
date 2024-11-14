@@ -13,15 +13,11 @@
       <button class="back-button" onclick="goBackToListing()">◀</button>
       <h1><div class="logo">
         <img src="images/Logo.png" alt="Logo">
-      </div></h1>       <div class="status-icons">
-        <span class="status-time"></span>
-        <span class="status-network"></span>
-        <span class="status-battery"></span>
-      </div>
+      </div></h1>
     </div>
 
     <!-- Profile Section -->
-    <div class="profile-name">Peter</div>
+    <div class="profile-name"><h1>Peter</h1></div>
 
     <div class="profile-section">
         <img src="images/parker.jpg" alt="Peter" class="profile-image">
@@ -50,10 +46,13 @@
 
     <!-- Donation and Volunteer Buttons -->
     <div class="button-group">
-      <button class="money-button" onclick="goToMoney()">Donate Money</button>
+      <div class="about-section">
+        <h3>How would you like to donate?</h3>
+      </div>
+      <button class="money-button" onclick="goToMoney()">Money</button>
       <p>Help Peter pay for league fees, team fees and travel expenses.</p>
       
-      <button class="gear-button" onclick="goToGear()">Donate Gear</button>
+      <button class="gear-button" onclick="goToGear()">Gear</button>
       <p>Give Peter your hand-me-downs as a gift.</p>
       
       <button class="volunteer-button" onclick="goToVolunteer()">Volunteer</button>
