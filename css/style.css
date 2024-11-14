@@ -33,6 +33,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 48px;
+  margin-top: 48px;
 }
  
 /* Logo */
@@ -54,7 +56,9 @@ body {
   font-weight: bold;
 }
 
-
+.payment-button {
+  margin-bottom: 48px;
+}
 
 .login-button {
   margin-top: 32px;
